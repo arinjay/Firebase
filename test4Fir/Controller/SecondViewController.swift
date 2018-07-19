@@ -12,10 +12,14 @@ import Firebase
 //ximport SkyFloatingLabelTextField
 class SecondViewController: UIViewController {
 
+    // MARK: - Linking variables to StoryBoard
+    
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var nametextField: UITextField!
     
     @IBOutlet weak var stateTextField: UITextField!
+    
+    // Reference to Firebase database
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
@@ -28,7 +32,7 @@ class SecondViewController: UIViewController {
     }
 
     
-    
+    // MARK: - Save user Details in Firebase database
     @IBAction func saveButton(_ sender: UIButton) {
         
         // To check if text is entered or not

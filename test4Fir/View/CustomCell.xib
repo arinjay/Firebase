@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="CustomCell" customModule="test4Fir" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKs-Fw-xRb">
+                        <rect key="frame" x="10" y="7" width="300" height="75"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSt-BF-Q3h">
+                                <rect key="frame" x="232" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tSt-BF-Q3h" secondAttribute="height" multiplier="1:1" id="3ND-qN-lCX"/>
+                                    <constraint firstAttribute="width" constant="60" id="ptH-za-Bx0"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="map"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0w2-On-Zkh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show In Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baE-Pe-5uC">
+                                <rect key="frame" x="232" y="53" width="60" height="15"/>
+                                <color key="backgroundColor" red="0.46382688624973545" green="0.49149733601666745" blue="1" alpha="0.80359053940000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="baE-Pe-5uC" secondAttribute="height" multiplier="4:1" id="fkt-rm-hrv"/>
+                                    <constraint firstAttribute="width" constant="60" id="hnk-Rr-av1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YyJ-fp-9cc">
+                                <rect key="frame" x="8" y="7" width="154" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe Coffee Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-Ef-HX1">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 km Away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxE-v5-qNN">
+                                        <rect key="frame" x="0.0" y="44" width="75" height="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <color key="textColor" red="0.98570067959999996" green="1" blue="0.93331485240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="U1h-1R-0aI"/>
+                                    <constraint firstAttribute="width" secondItem="YyJ-fp-9cc" secondAttribute="height" multiplier="77:30" id="ngB-Ig-pW4"/>
+                                    <constraint firstAttribute="height" constant="60" id="zSd-pN-zAT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YyJ-fp-9cc" secondAttribute="bottom" constant="8" id="0t4-z7-72k"/>
+                            <constraint firstItem="baE-Pe-5uC" firstAttribute="leading" secondItem="YyJ-fp-9cc" secondAttribute="trailing" constant="70" id="3G8-9V-4gm"/>
+                            <constraint firstItem="YyJ-fp-9cc" firstAttribute="top" secondItem="KKs-Fw-xRb" secondAttribute="top" constant="7" id="9tq-L5-fBw"/>
+                            <constraint firstAttribute="bottom" secondItem="tSt-BF-Q3h" secondAttribute="bottom" constant="7" id="L8W-yb-fhl"/>
+                            <constraint firstItem="YyJ-fp-9cc" firstAttribute="leading" secondItem="KKs-Fw-xRb" secondAttribute="leading" constant="8" id="TdK-Ui-Lne"/>
+                            <constraint firstAttribute="bottom" secondItem="baE-Pe-5uC" secondAttribute="bottom" constant="7" id="cXq-aG-j7B"/>
+                            <constraint firstItem="tSt-BF-Q3h" firstAttribute="top" secondItem="KKs-Fw-xRb" secondAttribute="top" constant="8" id="d7G-lE-IaP"/>
+                            <constraint firstAttribute="trailing" secondItem="tSt-BF-Q3h" secondAttribute="trailing" constant="8" id="dwE-bp-Nib"/>
+                            <constraint firstItem="tSt-BF-Q3h" firstAttribute="leading" secondItem="YyJ-fp-9cc" secondAttribute="trailing" constant="70" id="jwt-bF-Snv"/>
+                            <constraint firstAttribute="trailing" secondItem="baE-Pe-5uC" secondAttribute="trailing" constant="8" id="mfV-UW-bos"/>
+                            <constraint firstItem="baE-Pe-5uC" firstAttribute="top" secondItem="KKs-Fw-xRb" secondAttribute="top" constant="53" id="piA-P8-rbp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="KKs-Fw-xRb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="2lW-EP-3wh"/>
+                    <constraint firstAttribute="bottom" secondItem="KKs-Fw-xRb" secondAttribute="bottom" constant="8.5" id="ULW-XI-NJJ"/>
+                    <constraint firstAttribute="trailing" secondItem="KKs-Fw-xRb" secondAttribute="trailing" constant="10" id="Xl1-Sh-GEE"/>
+                    <constraint firstItem="KKs-Fw-xRb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vBA-YO-rqc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customView" destination="KKs-Fw-xRb" id="bPw-gY-fmF"/>
+                <outlet property="distanceLabel" destination="kxE-v5-qNN" id="aXp-42-neH"/>
+                <outlet property="placeNameLabel" destination="Q7j-Ef-HX1" id="rI0-b8-Qhc"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="84.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="map" width="650" height="624"/>
+    </resources>
+</document>
